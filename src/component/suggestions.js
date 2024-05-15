@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./../App.css";
 
 function DinnerSuggestion() {
   const Dinners = [
@@ -27,7 +28,7 @@ function DinnerSuggestion() {
   return (
     <div>
       <button onClick={getRandomDinner}>Överraska mig!</button>
-      <p>{randomDinner}</p>
+      <p className='dinnerSuggestions'>{randomDinner}</p>
     </div>
   );
 }
