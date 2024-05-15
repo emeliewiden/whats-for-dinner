@@ -1,5 +1,5 @@
 import "./App.css";
-import BreakfastSuggestion from "./component/suggestions";
+import DinnerSuggestion from "./component/suggestions";
 
 function App() {
   return (
@@ -7,8 +7,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <div className="App-container">
-            <h1>Whats for dinner?</h1>
-            <BreakfastSuggestion />
+            <h1>Vad ska vi äta ikväll?</h1>
+            <DinnerSuggestion />
           </div>
         </header>
       </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-function BreakfastSuggestion() {
-  const breakfasts = [
+function DinnerSuggestion() {
+  const Dinners = [
     "Laxpasta",
     "Thaiwok",
     "Spagetti och köttfärsås",
@@ -12,22 +12,24 @@ function BreakfastSuggestion() {
     "Fiskgratäng",
     "Köttbullar och pasta/potatismos",
     "Kyckling i ugn",
+    "Tacos",
+    "Libapizza",
 
   ];
 
-  const [randomBreakfast, setRandomBreakfast] = useState('');
+  const [randomDinner, setRandomDinner] = useState('');
 
-  const getRandomBreakfast = () => {
-    const breakfast = breakfasts[Math.floor(Math.random() * breakfasts.length)];
-    setRandomBreakfast(breakfast);
+  const getRandomDinner = () => {
+    const dinner = Dinners[Math.floor(Math.random() * Dinners.length)];
+    setRandomDinner(dinner);
   };
 
   return (
     <div>
-      <button onClick={getRandomBreakfast}>Surprice me!</button>
-      <p>{randomBreakfast}</p>
+      <button onClick={getRandomDinner}>Överraska mig!</button>
+      <p>{randomDinner}</p>
     </div>
   );
 }
 
-export default BreakfastSuggestion;
+export default DinnerSuggestion;
