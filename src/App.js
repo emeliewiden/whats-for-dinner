@@ -1,4 +1,5 @@
 import "./App.css";
+import BreakfastSuggestion from "./component/suggestions";
 
 function App() {
   return (
@@ -6,9 +7,8 @@ function App() {
       <div className="App">
         <header className="App-header">
           <div className="App-container">
-          <h1>Whats for dinner?</h1>
-          <h2 id="answer"> </h2>
-          <button id="button">Surprise me!</button>
+            <h1>Whats for dinner?</h1>
+            <BreakfastSuggestion />
           </div>
         </header>
       </div>
